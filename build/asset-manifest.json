@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/your-repository-name/static/css/main.2e902445.css",
-    "main.js": "/your-repository-name/static/js/main.3ad13232.js",
+    "main.js": "/your-repository-name/static/js/main.c1371d65.js",
     "static/js/787.7da95b79.chunk.js": "/your-repository-name/static/js/787.7da95b79.chunk.js",
     "static/media/instagram.png": "/your-repository-name/static/media/instagram.0123b74903777906ce88.png",
     "static/media/ameen-sign-png-inverted.png": "/your-repository-name/static/media/ameen-sign-png-inverted.8fcdf563830b49746fa8.png",
@@ -13,11 +13,11 @@
     "static/media/foRms.png": "/your-repository-name/static/media/foRms.a43aa42ad4b4e56f0cd5.png",
     "index.html": "/your-repository-name/index.html",
     "main.2e902445.css.map": "/your-repository-name/static/css/main.2e902445.css.map",
-    "main.3ad13232.js.map": "/your-repository-name/static/js/main.3ad13232.js.map",
+    "main.c1371d65.js.map": "/your-repository-name/static/js/main.c1371d65.js.map",
     "787.7da95b79.chunk.js.map": "/your-repository-name/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2e902445.css",
-    "static/js/main.3ad13232.js"
+    "static/js/main.c1371d65.js"
   ]
 }

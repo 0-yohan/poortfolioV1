@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import me from "./assets/me-mask.jpg";
 import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
