@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom scrollbar for webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5b5b5b;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+/* Custom scrollbar for Firefox */
+/* Note: Firefox doesn't support styling the scrollbar thumb and track separately */
+/* Therefore, the styles for thumb and track will be applied together */
+* {
+  scrollbar-color: #343434 #000000;
+}
+
+/* Custom scrollbar for Microsoft Edge */
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar-corner {
+  background-color: #1a202c;
+}
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
