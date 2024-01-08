@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/your-repository-name/static/css/main.2e902445.css",
-    "main.js": "/your-repository-name/static/js/main.c1371d65.js",
-    "static/js/787.7da95b79.chunk.js": "/your-repository-name/static/js/787.7da95b79.chunk.js",
-    "static/media/instagram.png": "/your-repository-name/static/media/instagram.0123b74903777906ce88.png",
-    "static/media/ameen-sign-png-inverted.png": "/your-repository-name/static/media/ameen-sign-png-inverted.8fcdf563830b49746fa8.png",
-    "static/media/linkedin.png": "/your-repository-name/static/media/linkedin.29c083dad916e881d642.png",
-    "static/media/me-mask.jpg": "/your-repository-name/static/media/me-mask.fc2b03d1583a10542752.jpg",
-    "static/media/github.png": "/your-repository-name/static/media/github.094cbda353849774f388.png",
-    "static/media/hackveda.png": "/your-repository-name/static/media/hackveda.175bf178bac5cbac3e80.png",
-    "static/media/swecha.png": "/your-repository-name/static/media/swecha.80dca0fa6c0a7c35a3a6.png",
-    "static/media/foRms.png": "/your-repository-name/static/media/foRms.a43aa42ad4b4e56f0cd5.png",
-    "index.html": "/your-repository-name/index.html",
-    "main.2e902445.css.map": "/your-repository-name/static/css/main.2e902445.css.map",
-    "main.c1371d65.js.map": "/your-repository-name/static/js/main.c1371d65.js.map",
-    "787.7da95b79.chunk.js.map": "/your-repository-name/static/js/787.7da95b79.chunk.js.map"
+    "main.css": "/static/css/main.2e902445.css",
+    "main.js": "/static/js/main.0da26afa.js",
+    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "static/media/instagram.png": "/static/media/instagram.0123b74903777906ce88.png",
+    "static/media/ameen-sign-png-inverted.png": "/static/media/ameen-sign-png-inverted.8fcdf563830b49746fa8.png",
+    "static/media/linkedin.png": "/static/media/linkedin.29c083dad916e881d642.png",
+    "static/media/me-mask.jpg": "/static/media/me-mask.fc2b03d1583a10542752.jpg",
+    "static/media/github.png": "/static/media/github.094cbda353849774f388.png",
+    "static/media/hackveda.png": "/static/media/hackveda.175bf178bac5cbac3e80.png",
+    "static/media/swecha.png": "/static/media/swecha.80dca0fa6c0a7c35a3a6.png",
+    "static/media/foRms.png": "/static/media/foRms.a43aa42ad4b4e56f0cd5.png",
+    "index.html": "/index.html",
+    "main.2e902445.css.map": "/static/css/main.2e902445.css.map",
+    "main.0da26afa.js.map": "/static/js/main.0da26afa.js.map",
+    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2e902445.css",
-    "static/js/main.c1371d65.js"
+    "static/js/main.0da26afa.js"
   ]
 }
