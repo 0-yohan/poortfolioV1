@@ -1,37 +1,39 @@
+// functions/sendMail.js
+
 const nodemailer = require('nodemailer');
 
-exports.handler = async (event) => {
+exports.handler = async (event, context) => {
   try {
     const { name, email, message } = JSON.parse(event.body);
 
-    // Create a nodemailer transporter (replace with your email service configuration)
+    // Create a nodemailer transporter
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'your-email@gmail.com',
-        pass: 'your-email-password',
+        user: 'ameen786ua@gmail.com', // Your Gmail email address
+        pass: 'ameen.google', // Your Gmail password or an app-specific password
       },
     });
 
-    // Define the email options
+    // Setup email data
     const mailOptions = {
       from: 'your-email@gmail.com',
-      to: 'your-receiver-email@example.com',
-      subject: 'New Form Submission',
+      to: 'ameen786ua@gmail.com', // Your email address to receive messages
+      subject: 'New Contact Form Submission',
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
 
-    // Send the email
-    await transporter.sendMail(mailOptions);
+    // Send mail
+    const info = await transporter.sendMail(mailOptions);
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: 'Email sent successfully' }),
+      body: JSON.stringify({ message: 'Email sent successfully', info }),
     };
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: 'Error sending email' }),
+      body: JSON.stringify({ message: 'Error sending email', error }),
     };
   }
 };

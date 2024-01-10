@@ -6,6 +6,8 @@ import linkedin from "./assets/linkedin.png";
 import Header from "./Header";
 import instagram from './assets/instagram.png';
 
+
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -21,18 +23,14 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      // Make a POST request to your Netlify function
-      const response = await axios.post('/.netlify/functions/sendMail', {
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-      });
+      const response = await axios.post('/.netlify/functions/sendMail', formData);
 
       console.log(response.data.message);
     } catch (error) {
       console.error('Error submitting form:', error);
     }
   };
+
 
   return (
     <div className="bg-black text-white">
@@ -43,7 +41,7 @@ const Contact = () => {
       <div className="max-w-screen-xl mx-auto p-8 mt-24">
         <h1 className="text-3xl font-bold mb-8">Contact Me</h1>
 
-        <form onSubmit={handleSubmit} className="flex flex-col space-y-4 content-center">
+        <form onSubmit={handleSubmit} className="flex flex-col space-y-4 content-center text-black">
           {/* Name */}
           <input
             type="text"
