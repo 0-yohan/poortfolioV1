@@ -30,7 +30,7 @@ const About = () => {
     }, 2000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  },);
 
   // Render the loading component if still loading
   if (isLoading) {
