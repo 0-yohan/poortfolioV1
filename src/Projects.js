@@ -5,7 +5,8 @@ import foRms from './assets/projects_images/foRms.png';
 import lhospitaL from './assets/projects_images/lhospitaL.png';
 import sukhan from './assets/projects_images/sukhan.png';
 import Header from './Header';
-
+import { useState, useEffect } from 'react';
+import Loading from './Loading';
 
 // Example data, replace it with your actual project data
 const projectsData = [
@@ -41,6 +42,24 @@ const projectsData = [
 ];
 
 const Projects = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an asynchronous operation (e.g., fetching data)
+    const fetchData = async () => {
+      // Perform your data fetching logic here
+
+      // Set loading to false once data is fetched
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
+  // Render the loading component if still loading
+  if (isLoading) {
+    return <Loading />;
+  }
   return (
     <div className="bg-black text-white">
       <Header />
@@ -53,7 +72,7 @@ const Projects = () => {
               <img src={project.image} alt={project.title} className="w-full md:w-1/3 rounded-lg cursor-pointer" />
 
               {/* Project Description */}
-              <div className="md:w-2/3 mt-4 md:mt-0">
+              <div className="md:w-2/3 md:mt-0">
                 <h2 className="text-2xl font-bold">{project.title}</h2>
                 <p className="mt-2">{project.description}</p>
               </div>

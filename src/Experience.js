@@ -6,6 +6,8 @@ import accenture from '../src/assets/company_logos/accenture.png';
 import panace from '../src/assets/company_logos/panacea.png';
 import hackveda from '../src/assets/company_logos/hackveda.png';
 import swecha from '../src/assets/company_logos/swecha.png';
+import { useState, useEffect } from 'react';
+import Loading from './Loading';
 
 
 // Example data, replace it with your actual experience data
@@ -25,8 +27,10 @@ const experienceData = [
     role: 'Software Development Intern',
     period: 'October 2022 - December 2022',
     description: [
-      'Analysed results of machine learning models and tuned hyperparameters for improved accuracy',
-      'Performed exploratory data analysis to identify trends and patterns in data',
+      `Collaborated on the development of DDx to Diagnosis Project, utilising AWS Textract, AWS Medical Comprehend,
+        Machine Learning and Flask for Disease Identification and Medical report analysis along with a user-friendly chatbot`,
+      'Utilised version control systems (GIT) for maintaining and updating code',
+      
     ],
     image: panace, // Replace with the actual image URL
   },
@@ -35,9 +39,8 @@ const experienceData = [
     role: 'Machine Learning Intern',
     period: 'August 2022 - October 2022',
     description: [
-      `Collaborated on the development of DDx to Diagnosis Project, utilising AWS Textract, AWS Medical Comprehend,
-      Machine Learning and Flask for Disease Identification and Medical report analysis along with a user-friendly chatbot`,
-      'Utilised version control systems (GIT) for maintaining and updating code',
+      'Analysed results of machine learning models and tuned hyperparameters for improved accuracy',
+      'Performed exploratory data analysis to identify trends and patterns in data',
     ],
     image: hackveda, // Replace with the actual image URL
   },
@@ -56,6 +59,24 @@ const experienceData = [
 ];
 
 const Experience = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an asynchronous operation (e.g., fetching data)
+    const fetchData = async () => {
+      // Perform your data fetching logic here
+
+      // Set loading to false once data is fetched
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
+  // Render the loading component if still loading
+  if (isLoading) {
+    return <Loading />;
+  }
   return (
     <div className="bg-black text-white">
       <Header />

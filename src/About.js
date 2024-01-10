@@ -1,11 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import me from "./assets/me-mask.jpg";
 import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
 import Header from "./Header";
 import instagram from './assets/instagram.png';
+import Loading from './Loading';
 
 const About = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const greetings = ['Hello', 'Hey', 'Hola', 'Salam'];
+  const [currentGreeting, setCurrentGreeting] = useState(0);
+
+  useEffect(() => {
+    // Simulate an asynchronous operation (e.g., fetching data)
+    const fetchData = async () => {
+      // Perform your data fetching logic here
+
+      // Set loading to false once data is fetched
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
+  // Update the greeting every 2 seconds
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentGreeting((prev) => (prev + 1) % greetings.length);
+    }, 2000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  // Render the loading component if still loading
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <div className='bg-black text-white'>
       <Header />
@@ -16,7 +47,7 @@ const About = () => {
           <img src={me} alt="Me" className="w-full md:w-1/2 max-w-md rounded-full mb-8 md:mb-0" />
 
           <div className="md:w-1/2 pl-4 text-center md:text-left">
-            <h1 className="text-3xl font-bold mb-4">Your Name</h1>
+            <h1 className="text-4xl font-bold mb-4 text-blue-600">{greetings[currentGreeting]}</h1>
             <p className="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
@@ -26,7 +57,7 @@ const About = () => {
             <a
               href="https://drive.google.com/file/d/1_ZlRt1aPVwc4ltNPogonvj5AYLx4j0QC/view?usp=sharing"  // Replace with the actual path to your resume
               download="YourResume.pdf"
-              className="bg-black text-white text-bold border-2 border-blue-500 px-6 py-3 rounded-lg hover:bg-blue-500 hover:text-black transition duration-300 inline-block"
+              className="bg-black text-white text-bold border-2 border-blue-500 mt-6 px-6 py-3 rounded-lg hover:bg-blue-500 hover:text-black transition duration-300 inline-block"
             >
               Résumé
             </a>

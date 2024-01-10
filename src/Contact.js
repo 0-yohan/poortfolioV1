@@ -5,6 +5,8 @@ import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
 import Header from "./Header";
 import instagram from './assets/instagram.png';
+import {useEffect } from 'react';
+import Loading from './Loading';
 
 
 
@@ -30,6 +32,24 @@ const Contact = () => {
       console.error('Error submitting form:', error);
     }
   };
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an asynchronous operation (e.g., fetching data)
+    const fetchData = async () => {
+      // Perform your data fetching logic here
+
+      // Set loading to false once data is fetched
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
+  // Render the loading component if still loading
+  if (isLoading) {
+    return <Loading />;
+  }
 
 
   return (
