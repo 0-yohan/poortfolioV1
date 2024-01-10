@@ -11,14 +11,14 @@ exports.handler = async (event, context) => {
       service: 'gmail',
       auth: {
         user: 'ameen786ua@gmail.com', // Your Gmail email address
-        pass: 'ameen.google', // Your Gmail password or an app-specific password
+        pass: 'ameengenius', // Your Gmail password or an app-specific password
       },
     });
 
     // Setup email data
     const mailOptions = {
-      from: 'your-email@gmail.com',
-      to: 'ameen786ua@gmail.com', // Your email address to receive messages
+      from: 'ameen786ua@gmail.com',
+      to: 'carbylearns@gmail.com', // Your email address to receive messages
       subject: 'New Contact Form Submission',
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
