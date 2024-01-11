@@ -61,7 +61,7 @@ const Contact = () => {
       <div className="max-w-screen-xl mx-auto p-8 mt-24">
         <h1 className="text-3xl font-bold mb-8">Contact Me</h1>
 
-        <form onSubmit={handleSubmit} className="flex flex-col space-y-4 content-center text-black">
+        <form name = 'contact' method = 'POST' daata-netlify = 'true' onSubmit={handleSubmit} className="flex flex-col space-y-4 content-center text-black">
           {/* Name */}
           <input
             type="text"
