@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import foRms from './assets/projects_images/foRms.png';
 import lhospitaL from './assets/projects_images/lhospitaL.png';
 import sukhan from './assets/projects_images/sukhan.png';
+import lms from './assets/projects_images/lms.png';
 import Header from './Header';
 import { useState, useEffect } from 'react';
 import Loading from './Loading';
@@ -26,6 +27,14 @@ const projectsData = [
                 information,create a pop quiz,and much more`,
     image: foRms, // Replace with the actual image URL
     link: 'https://github.com/0-yohan/forms_iwt',
+  },
+  {
+    title: 'LMS: Library Management System',
+    description: `An interactive library management system using python as a base programming language, Tkinter 
+                  library for graphical user interface and files for data management. It stimulates the role of a librarian in a library. The features of this project 
+                  are it can keep track of all the books available in the library`,
+    image: lms, // Replace with the actual image URL
+    link: 'https://github.com/0-yohan/library-management-system-EE-Project',
   },
   {
     title: 'lhospitaL',
