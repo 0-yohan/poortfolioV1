@@ -55,8 +55,8 @@ const About = () => {
 
             {/* Download Resume Button */}
             <a
-              href="https://drive.google.com/file/d/1_ZlRt1aPVwc4ltNPogonvj5AYLx4j0QC/view?usp=sharing"  // Replace with the actual path to your resume
-              download="YourResume.pdf"
+              href="https://drive.google.com/file/d/1_gcFmMgekkCpwolHaJC4Fdq_gtt-DOqz/view"  // Replace with the actual path to your resume
+              download="Resume.pdf"
               className="bg-black text-white text-bold border-2 border-blue-500 mt-6 px-6 py-3 rounded-lg hover:bg-blue-500 hover:text-black transition duration-300 inline-block"
             >
               Résumé
