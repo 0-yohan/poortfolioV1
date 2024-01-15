@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import ReactTyped from 'react-typed';
+import { Link } from 'react-router-dom';
 import me from "./assets/me-mask.jpg";
 import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
+import email from "./assets/email.png";
 import Header from "./Header";
 import instagram from './assets/instagram.png';
 import Loading from './Loading';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const greetings = ['Hello', 'Hey', 'Hola', 'Marhabaan', 'Ciao', 'Bonjour', 'Ni Hao'];
+  const greetings = ['Hello', 'Hey', 'Namaste', 'Marhaba', 'Ciao', 'Bonjour', 'Nǐ hǎo', 'Hola', 'Kon\'nichiwa', 'Annyeonghaseyo'];
   const [currentGreeting, setCurrentGreeting] = useState(0);
 
   useEffect(() => {
@@ -47,11 +50,13 @@ const About = () => {
           <img src={me} alt="Me" className="w-full md:w-1/2 max-w-md rounded-full mb-8 md:mb-0" />
 
           <div className="md:w-1/2 pl-4 text-center md:text-left">
-            <h1 className="text-4xl font-bold mb-4 text-blue-600">{greetings[currentGreeting]}</h1>
-            <p className="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            {/* <h1 className="text-4xl font-bold mb-4 text-blue-600">{greetings[currentGreeting]}</h1> */}
+            <h1 className="text-4xl font-bold mb-4 text-blue-600"><ReactTyped strings={greetings} typeSpeed={69} backSpeed={69} loop /></h1>
+            <p className="text-lg mb-4">I'm Ameen, a CS undergrad wandering through the lore of life. From making applicable websites to witty programs, 
+                                        my intrests can go beyond oblivion.
+              <br />
+              <br /> Feel free to browse through this website, hit me up with your remars or collaborate with me if you have any cool ideas, may it be serious or for fun.
+            </p>
 
             {/* Download Resume Button */}
             <a
@@ -71,6 +76,8 @@ const About = () => {
           <a href='https://github.com/0-yohan' target='_blank' rel="noreferrer"><img src={github} alt="GitHub" className="h-8" /></a>
           <a href='https://www.linkedin.com/in/am3n/' target='_blank' rel="noreferrer"> <img src={linkedin} alt="LinkedIn" className="h-8" /></a>
           <a href='https://www.instagram.com/imameenbtw/' target='_blank' rel="noreferrer"><img src={instagram} alt="Instagram" className="h-8" /></a>
+          <Link to="/contact"> <img src={email} alt="Email" className="h-8" /> </Link>
+          {/* <a href='' target='_blank' rel="noreferrer"> <img src={email} alt="Email" className="h-8" /></a> */}
         </div>
       </div>
     </div>

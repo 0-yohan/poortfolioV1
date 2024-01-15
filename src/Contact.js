@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 // import axios from 'axios';
 import github from "./assets/github.png";
+// import email from "./assets/email.png";
 import linkedin from "./assets/linkedin.png";
 import Header from "./Header";
 import instagram from './assets/instagram.png';
@@ -128,10 +129,15 @@ const Contact = () => {
 </form>
 
       </div>
+      <div className='flex justify-center'>
+        Or mail me @ <div className='text-blue-500 mx-1'>afor1m3en@gmail.com</div>
+      </div>
       <div className="flex space-x-4 mt-8 justify-center">
           <a href='https://github.com/0-yohan' target='_blank' rel="noreferrer"><img src={github} alt="GitHub" className="h-8" /></a>
           <a href='https://www.linkedin.com/in/am3n/' target='_blank' rel="noreferrer"> <img src={linkedin} alt="LinkedIn" className="h-8" /></a>
           <a href='https://www.instagram.com/imameenbtw/' target='_blank' rel="noreferrer"><img src={instagram} alt="Instagram" className="h-8" /></a>
+          {/* <button onClick={() => window.location = 'mailto:afor1m3en@gmail.com'}><img src={email} alt='Email' className='h-8'/></button> */}
+          {/* <a href='https://github.com/0-yohan' target='_blank' rel="noreferrer"><img src={email} alt="Email" className="h-8" /></a> */}
         </div>
     </div>
   );
