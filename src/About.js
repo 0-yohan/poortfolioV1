@@ -10,29 +10,31 @@ import instagram from './assets/instagram.png';
 import Loading from './Loading';
 
 const About = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading] = useState(false);
+
   const greetings = ['Hello', 'Hey', 'Namaste', 'Marhaba', 'Ciao', 'Bonjour', 'Nǐ hǎo', 'Hola', 'Kon\'nichiwa', 'Annyeonghaseyo'];
-  const [currentGreeting, setCurrentGreeting] = useState(0);
+  // const [currentGreeting, setCurrentGreeting] = useState(0);
 
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data)
-    const fetchData = async () => {
-      // Perform your data fetching logic here
+    // const fetchData = async () => {
+    //   // Perform your data fetching logic here
 
-      // Set loading to false once data is fetched
-      setIsLoading(false);
-    };
+    //   // Set loading to false once data is fetched
+    //   setIsLoading(false);
+    // };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   // Update the greeting every 2 seconds
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentGreeting((prev) => (prev + 1) % greetings.length);
-    }, 2000);
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setCurrentGreeting((prev) => (prev + 1) % greetings.length);
+  //   }, 2000);
 
-    return () => clearInterval(intervalId);
+  //   return () => clearInterval(intervalId);
   },);
 
   // Render the loading component if still loading
@@ -55,7 +57,7 @@ const About = () => {
             <p className="text-lg mb-4">I'm Ameen, a CS undergrad wandering through the lore of life. From making applicable websites to witty programs, 
                                         my intrests go beyond oblivion.
               <br />
-              <br /> Feel free to browse through this website. Hit me up with your remarks or collaborate with me if you have any cool ideas, may it be serious or for fun.
+              <br /> Feel free to browse through this website. Hit me up with your remarks or collaborate with me if you have any cool ideas, may it be productive or for fun.
             </p>
 
             {/* Download Resume Button */}
