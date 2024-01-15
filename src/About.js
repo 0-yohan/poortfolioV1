@@ -53,9 +53,9 @@ const About = () => {
             {/* <h1 className="text-4xl font-bold mb-4 text-blue-600">{greetings[currentGreeting]}</h1> */}
             <h1 className="text-4xl font-bold mb-4 text-blue-600"><ReactTyped strings={greetings} typeSpeed={69} backSpeed={69} loop /></h1>
             <p className="text-lg mb-4">I'm Ameen, a CS undergrad wandering through the lore of life. From making applicable websites to witty programs, 
-                                        my intrests can go beyond oblivion.
+                                        my intrests go beyond oblivion.
               <br />
-              <br /> Feel free to browse through this website, hit me up with your remars or collaborate with me if you have any cool ideas, may it be serious or for fun.
+              <br /> Feel free to browse through this website. Hit me up with your remarks or collaborate with me if you have any cool ideas, may it be serious or for fun.
             </p>
 
             {/* Download Resume Button */}
