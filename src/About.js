@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReactTyped from 'react-typed';
+// import ReactTyped from 'react-typed';
 import { Link } from 'react-router-dom';
 import me from "./assets/me-mask.jpg";
 import github from "./assets/github.png";
@@ -8,25 +8,26 @@ import email from "./assets/email.png";
 import Header from "./Header";
 import instagram from './assets/instagram.png';
 import Loading from './Loading';
+import TypingText from './TypingText';
 
 const About = () => {
-  // const [isLoading, setIsLoading] = useState(true);
-  const [isLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading] = useState(false);
 
   const greetings = ['Hello', 'Hey', 'Namaste', 'Marhaba', 'Ciao', 'Bonjour', 'Nǐ hǎo', 'Hola', 'Kon\'nichiwa', 'Annyeonghaseyo'];
   // const [currentGreeting, setCurrentGreeting] = useState(0);
 
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data)
-    // const fetchData = async () => {
-    //   // Perform your data fetching logic here
+    const fetchData = async () => {
+      // Perform your data fetching logic here
 
-    //   // Set loading to false once data is fetched
-    //   setIsLoading(false);
-    // };
+      // Set loading to false once data is fetched
+      setIsLoading(false);
+    };
 
-  //   fetchData();
-  // }, []);
+    fetchData();
+  }, []);
 
   // Update the greeting every 2 seconds
   // useEffect(() => {
@@ -35,7 +36,7 @@ const About = () => {
   //   }, 2000);
 
   //   return () => clearInterval(intervalId);
-  },);
+  // },);
 
   // Render the loading component if still loading
   if (isLoading) {
@@ -53,7 +54,7 @@ const About = () => {
 
           <div className="md:w-1/2 pl-4 text-center md:text-left">
             {/* <h1 className="text-4xl font-bold mb-4 text-blue-600">{greetings[currentGreeting]}</h1> */}
-            <h1 className="text-4xl font-bold mb-4 text-blue-600"><ReactTyped strings={greetings} typeSpeed={69} backSpeed={69} loop /></h1>
+            <h1 className="text-4xl font-bold mb-4 text-blue-600"><TypingText strings={greetings} typeSpeed={173} /></h1>
             <p className="text-lg mb-4">I'm Ameen, a CS undergrad wandering through the lore of life. From making applicable websites to witty programs, 
                                         my intrests go beyond oblivion.
               <br />
