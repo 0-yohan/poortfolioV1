@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e902445.css",
-    "main.js": "/static/js/main.0da26afa.js",
+    "main.css": "/static/css/main.316dc85e.css",
+    "main.js": "/static/js/main.aa211474.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "static/media/rasengan.png": "/static/media/rasengan.b5f932fdfd6dcb9d43b6.png",
+    "static/media/chidori.png": "/static/media/chidori.b95e6bead5c1eef3faa2.png",
     "static/media/instagram.png": "/static/media/instagram.0123b74903777906ce88.png",
     "static/media/ameen-sign-png-inverted.png": "/static/media/ameen-sign-png-inverted.8fcdf563830b49746fa8.png",
     "static/media/linkedin.png": "/static/media/linkedin.29c083dad916e881d642.png",
+    "static/media/lms.png": "/static/media/lms.ed2f782e74a157b6ae68.png",
     "static/media/me-mask.jpg": "/static/media/me-mask.fc2b03d1583a10542752.jpg",
     "static/media/github.png": "/static/media/github.094cbda353849774f388.png",
+    "static/media/anotheronebitesthedust.png": "/static/media/anotheronebitesthedust.7356b4b98c454fab2089.png",
     "static/media/hackveda.png": "/static/media/hackveda.175bf178bac5cbac3e80.png",
+    "static/media/email.png": "/static/media/email.6284b4832fe6df336e63.png",
     "static/media/swecha.png": "/static/media/swecha.80dca0fa6c0a7c35a3a6.png",
     "static/media/foRms.png": "/static/media/foRms.a43aa42ad4b4e56f0cd5.png",
     "index.html": "/index.html",
-    "main.2e902445.css.map": "/static/css/main.2e902445.css.map",
-    "main.0da26afa.js.map": "/static/js/main.0da26afa.js.map",
+    "main.316dc85e.css.map": "/static/css/main.316dc85e.css.map",
+    "main.aa211474.js.map": "/static/js/main.aa211474.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e902445.css",
-    "static/js/main.0da26afa.js"
+    "static/css/main.316dc85e.css",
+    "static/js/main.aa211474.js"
   ]
 }
