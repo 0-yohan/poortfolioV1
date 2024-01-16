@@ -43,7 +43,7 @@ const Contact = () => {
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data)
     const fetchData = async () => {
-      // Perform your data fetching logic here
+      // Perform data fetching logic here
 
       // Set loading to false once data is fetched
       setIsLoading(false);
@@ -82,7 +82,7 @@ const Contact = () => {
 
   return (
     <div className="bg-black text-white">
-      {/* Your existing header component */}
+      
       <Header/>
 
       {/* Contact Form */}
@@ -99,17 +99,17 @@ const Contact = () => {
   placeholder="Your Name"
   className="p-2 border border-white rounded-md"
   required
-/>
-
-<input
-  type="email"
-  name="email"
-  value={formData.email}
-  onChange={handleChange}
-  placeholder="Your Email"
-  className="p-2 border border-white rounded-md"
-  required
-/>
+  />
+  {/* Email */}
+  <input
+    type="email"
+    name="email"
+    value={formData.email}
+    onChange={handleChange}
+    placeholder="Your Email"
+    className="p-2 border border-white rounded-md"
+    required
+  />
 
   {/* Message */}
   <textarea

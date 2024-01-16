@@ -8,7 +8,7 @@ const TypingText = ({ strings, typeSpeed }) => {
     const options = {
       strings,
       typeSpeed,
-      loop: true, // Set to true if you want the typing to loop
+      loop: true, //typing will be in a loop
     };
 
     const typedInstance = new Typed(typedRef.current, options);

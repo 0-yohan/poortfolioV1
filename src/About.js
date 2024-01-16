@@ -20,7 +20,7 @@ const About = () => {
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data)
     const fetchData = async () => {
-      // Perform your data fetching logic here
+      // Perform data fetching logic here
 
       // Set loading to false once data is fetched
       setIsLoading(false);
@@ -48,7 +48,7 @@ const About = () => {
       <Header />
 
       <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-8 md:pl-32">
-        {/* Your Photo and Information */}
+        {/* Photo and Information */}
         <div className="flex flex-col md:flex-row items-center md:space-x-8 mt-32">
           <img src={me} alt="Me" className="w-full md:w-1/2 max-w-md rounded-full mb-8 md:mb-0" />
 

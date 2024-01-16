@@ -16,13 +16,14 @@ const projectsData = [
     title: 'Sukhan',
     description: `A refined website to be of service to poets where they can upload their poetry and correspondingly can be read by
                 anybody. It not only allows poetss to effortlessly upload their poetry but also fosters a vibrant community where enthusiasts 
-                can explore, appreciate, and engage with diverse poetic works`,
+                can explore, appreciate, and engage with diverse poetic works.`,
     image: sukhan, // image
     link: 'http://sukhan.art/',
   },
   {
     title: 'Auto Zoom meet joiner',
-    description: `An intutive Python script that attends a zoom meeting on desired join time behalf of you provided link and join time. It runs through CLI`,
+    description: `An intutive Python script that attends a zoom meeting on desired join time behalf 
+                  of you provided link and join time. It runs through CLI.`,
     image: zoom_joiner, 
     link: 'https://github.com/0-yohan/auto-zoom-join',
   },
@@ -32,7 +33,7 @@ const projectsData = [
                 survey and questionnaires online in order to collect the information and 
                 organise them either simple or complex.These google forms are used to plan 
                 events,manage event restrictions ,create a opinion poll,collect contact 
-                information,create a pop quiz,and much more`,
+                information,create a pop quiz,and much more.`,
     image: foRms, // image
     link: 'https://github.com/0-yohan/forms_iwt',
   },
@@ -40,7 +41,7 @@ const projectsData = [
     title: 'LMS: Library Management System',
     description: `An interactive library management system using python as a base programming language, Tkinter 
                   library for graphical user interface and files for data management. It stimulates the role of a librarian in a library. The features of this project 
-                  are it can keep track of all the books available in the library`,
+                  are it can keep track of all the books available in the library.`,
     image: lms, 
     link: 'https://github.com/0-yohan/library-management-system-EE-Project',
   },
@@ -50,7 +51,7 @@ const projectsData = [
                 to manage the information related to health care and aids in the job 
                 completion of health care providers effectively. They manage the data related to all 
                 departments of healthcare such as, clinical, financial, laboratory, In-patient, 
-                Out-patient, operation theatre and much more`,
+                Out-patient, operation theatre and much more.`,
     image: lhospitaL, // image
     link: 'https://github.com/0-yohan/IhospitaL',
   },
@@ -64,7 +65,7 @@ const Projects = () => {
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data)
     const fetchData = async () => {
-      // Perform your data fetching logic here
+      // Perform data fetching logic here
 
       // Set loading to false once data is fetched
       setIsLoading(false);

@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 import Loading from './Loading';
 
 
-// Example data, replace it with your actual experience data
+// Experience data
 const experienceData = [
   {
     company: 'Accenture',
@@ -20,7 +20,7 @@ const experienceData = [
       'Assisted the ASE (Associate Software Engineering) team with planning, organising, and developing new products and projects',
       'Coordinated with cross-functional teams to identify process gaps and develop solutions',
     ],
-    image: accenture, // Replace with the actual image URL
+    image: accenture, // image
   },
   {
     company: 'Panace.ai',
@@ -32,7 +32,7 @@ const experienceData = [
       'Utilised version control systems (GIT) for maintaining and updating code',
       
     ],
-    image: panace, // Replace with the actual image URL
+    image: panace, 
   },
   {
     company: 'Hackveda',
@@ -42,7 +42,7 @@ const experienceData = [
       'Analysed results of machine learning models and tuned hyperparameters for improved accuracy',
       'Performed exploratory data analysis to identify trends and patterns in data',
     ],
-    image: hackveda, // Replace with the actual image URL
+    image: hackveda, // image url 
   },
   {
     company: 'Swecha',
@@ -53,7 +53,7 @@ const experienceData = [
       `Built a web-based gaming arcade that holds a collection of games that can be played on a browser without any
       installations required`,
     ],
-    image: swecha, // Replace with the actual image URL
+    image: swecha, // image
   },
   // Add more experiences as needed
 ];
@@ -64,7 +64,7 @@ const Experience = () => {
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data)
     const fetchData = async () => {
-      // Perform your data fetching logic here
+      // Perform  data fetching logic here
 
       // Set loading to false once data is fetched
       setIsLoading(false);

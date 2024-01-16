@@ -5,7 +5,7 @@ import About from './About';
 import Experience from "./Experience";
 import Contact from "./Contact";
 import NotFound from "./NotFound"
-// Import other pages here
+// Import other pages 
 
 const App = () => {
   return (
