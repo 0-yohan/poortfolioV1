@@ -5,18 +5,26 @@ import foRms from './assets/projects_images/foRms.png';
 import lhospitaL from './assets/projects_images/lhospitaL.png';
 import sukhan from './assets/projects_images/sukhan.png';
 import lms from './assets/projects_images/lms.png';
+import zoom_joiner from './assets/projects_images/auto_zoom.png';
 import Header from './Header';
 import { useState, useEffect } from 'react';
 import Loading from './Loading';
 
-// Example data, replace it with your actual project data
+
 const projectsData = [
   {
     title: 'Sukhan',
     description: `A refined website to be of service to poets where they can upload their poetry and correspondingly can be read by
-                anybody`,
-    image: sukhan, // Replace with the actual image URL
+                anybody. It not only allows poetss to effortlessly upload their poetry but also fosters a vibrant community where enthusiasts 
+                can explore, appreciate, and engage with diverse poetic works`,
+    image: sukhan, // image
     link: 'http://sukhan.art/',
+  },
+  {
+    title: 'Auto Zoom meet joiner',
+    description: `An intutive Python script that attends a zoom meeting on desired join time behalf of you provided link and join time. It runs through CLI`,
+    image: zoom_joiner, 
+    link: 'https://github.com/0-yohan/auto-zoom-join',
   },
   {
     title: 'foRms',
@@ -25,7 +33,7 @@ const projectsData = [
                 organise them either simple or complex.These google forms are used to plan 
                 events,manage event restrictions ,create a opinion poll,collect contact 
                 information,create a pop quiz,and much more`,
-    image: foRms, // Replace with the actual image URL
+    image: foRms, // image
     link: 'https://github.com/0-yohan/forms_iwt',
   },
   {
@@ -33,7 +41,7 @@ const projectsData = [
     description: `An interactive library management system using python as a base programming language, Tkinter 
                   library for graphical user interface and files for data management. It stimulates the role of a librarian in a library. The features of this project 
                   are it can keep track of all the books available in the library`,
-    image: lms, // Replace with the actual image URL
+    image: lms, 
     link: 'https://github.com/0-yohan/library-management-system-EE-Project',
   },
   {
@@ -43,11 +51,11 @@ const projectsData = [
                 completion of health care providers effectively. They manage the data related to all 
                 departments of healthcare such as, clinical, financial, laboratory, In-patient, 
                 Out-patient, operation theatre and much more`,
-    image: lhospitaL, // Replace with the actual image URL
+    image: lhospitaL, // image
     link: 'https://github.com/0-yohan/IhospitaL',
   },
-  
-  // Add more projects as needed
+
+  // Add more projects 
 ];
 
 const Projects = () => {

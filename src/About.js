@@ -55,10 +55,12 @@ const About = () => {
           <div className="md:w-1/2 pl-4 text-center md:text-left">
             {/* <h1 className="text-4xl font-bold mb-4 text-blue-600">{greetings[currentGreeting]}</h1> */}
             <h1 className="text-4xl font-bold mb-4 text-blue-600"><TypingText strings={greetings} typeSpeed={173} /></h1>
-            <p className="text-lg mb-4">I'm Ameen, a CS undergrad wandering through the lore of life. From making applicable websites to witty programs, 
-                                        my intrests go beyond oblivion.
+            <p className="text-lg mb-4">I'm Ameen, a Computer Science undergrad wandering through the lore of life. My expertise spans from crafting applicable websites to witty programs, 
+                                        my interests go beyond oblivion.
               <br />
-              <br /> Feel free to browse through this website. Hit me up with your remarks or collaborate with me if you have any cool ideas, may it be productive or for fun.
+              <br /> Feel free to browse through this website. I welcome your feedback and encourage collaboration on any exciting ideas you may have, whether you have 
+                    interesting ideas for productivity or just for the pure joy of exploring, I would love to hear about 
+                  them and work with you on them. Together, let's connect and create something extraordinary!
             </p>
 
             {/* Download Resume Button */}
