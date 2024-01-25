@@ -67,7 +67,7 @@ const About = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1_gcFmMgekkCpwolHaJC4Fdq_gtt-DOqz/view"  // Replace with the actual path to your resume
+              href="https://docs.google.com/document/d/1jq19sZc-9Y1qi6hv9rFMkKzuLCr-KG2b7nIBb4TAzGc/edit?usp=sharing"  // Replace with the actual path to your resume
               download="Resume.pdf"
               className="bg-black text-white text-bold border-2 border-blue-500 mt-6 px-6 py-3 rounded-lg hover:bg-blue-500 hover:text-black transition duration-300 inline-block"
             >
