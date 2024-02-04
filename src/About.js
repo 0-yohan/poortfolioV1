@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 // import ReactTyped from 'react-typed';
 import { Link } from 'react-router-dom';
 // import me from "./assets/me-mask.jpg";
-import me from "./assets/me_eid.jpg"
+import me from "./assets/me_black_kurta.jpg"
+// import me from "./assets/me_eid.jpg"
 import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
 import email from "./assets/email.png";
