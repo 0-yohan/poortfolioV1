@@ -1,6 +1,6 @@
 // Experience.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Header from './Header';
 import accenture from '../src/assets/company_logos/accenture.png';
 import panace from '../src/assets/company_logos/panacea.png';
