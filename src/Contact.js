@@ -10,6 +10,7 @@ import {useEffect } from 'react';
 import Loading from './Loading';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Helmet } from 'react-helmet';
 // import emailjs from 'emailjs-com';
 
 
@@ -82,6 +83,9 @@ const Contact = () => {
 
   return (
     <div className="bg-black text-white">
+      <Helmet>
+        <title>Portfolio | Contact</title>
+      </Helmet>
       
       <Header/>
 

@@ -9,6 +9,7 @@ import zoom_joiner from './assets/projects_images/auto_zoom.png';
 import Header from './Header';
 import { useState, useEffect } from 'react';
 import Loading from './Loading';
+import { Helmet } from 'react-helmet';
 
 
 const projectsData = [
@@ -80,6 +81,10 @@ const Projects = () => {
   }
   return (
     <div className="bg-black text-white">
+      <Helmet>
+        <title>Portfolio | Projects</title>
+      </Helmet>
+      
       <Header />
       {/* Project List */}
       <div className="max-w-screen-xl mx-auto p-8 mt-24">

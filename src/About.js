@@ -11,6 +11,7 @@ import Header from "./Header";
 import instagram from './assets/instagram.png';
 import Loading from './Loading';
 import TypingText from './TypingText';
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,6 +48,10 @@ const About = () => {
 
   return (
     <div className='bg-black text-white'>
+      <Helmet>
+        <title>Portfolio | About</title>
+      </Helmet>
+      
       <Header />
 
       <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-8 md:pl-32">

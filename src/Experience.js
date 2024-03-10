@@ -8,6 +8,7 @@ import hackveda from '../src/assets/company_logos/hackveda.png';
 import swecha from '../src/assets/company_logos/swecha.png';
 import { useState, useEffect } from 'react';
 import Loading from './Loading';
+import { Helmet } from 'react-helmet';
 
 
 // Experience data
@@ -79,6 +80,11 @@ const Experience = () => {
   }
   return (
     <div className="bg-black text-white">
+      <Helmet>
+        <title>Portfolio | Experience</title>
+      </Helmet>
+      
+
       <Header />
       {/* Experience List */}
       <div className="max-w-screen-xl mx-auto p-8 mt-24 pl-12">
