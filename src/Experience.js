@@ -18,7 +18,7 @@ const experienceData = [
     period: 'June 2023 - August 2023',
     description: [
       'Assisted the ASE (Associate Software Engineering) team with planning, organising, and developing new products and projects',
-      'Coordinated with cross-functional teams to identify process gaps and develop solutions',
+      'Co-ordinated with cross-functional teams to identify process gaps and develop solutions',
     ],
     image: accenture, // image
   },
@@ -83,7 +83,7 @@ const Experience = () => {
       {/* Experience List */}
       <div className="max-w-screen-xl mx-auto p-8 mt-24 pl-12">
         {experienceData.map((experience, index) => (
-          <Link key={index} to="/" className="block mb-8">
+          // <Link key={index} to="/" className="block mb-8">
             <div className="flex flex-col md:flex-row items-center md:space-x-8">
               {/* Experience Image */}
               <img src={experience.image} alt={experience.company} className="w-full md:w-1/4 rounded-lg cursor-pointer" />
@@ -93,14 +93,14 @@ const Experience = () => {
                 <h2 className="text-2xl font-bold">{experience.company}</h2>
                 <p className="text-lg font-bold">{experience.role}</p>
                 <p className="text-sm">{experience.period}</p>
-                <ul className="list-disc mt-2">
+                <ul className="list-disc mt-2 text-justify">
                   {experience.description.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
                 </ul>
               </div>
             </div>
-          </Link>
+          // </Link>
         ))}
       </div>
     </div>

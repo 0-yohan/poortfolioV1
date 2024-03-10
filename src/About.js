@@ -57,7 +57,7 @@ const About = () => {
           <div className="md:w-1/2 pl-4 text-center md:text-left">
             {/* <h1 className="text-4xl font-bold mb-4 text-blue-600">{greetings[currentGreeting]}</h1> */}
             <h1 className="text-4xl font-bold mb-4 text-blue-600"><TypingText strings={greetings} typeSpeed={173} /></h1>
-            <p className="text-lg mb-4">I'm Ameen, a Computer Science undergrad wandering through the lore of life. My expertise spans from crafting applicable websites to witty programs, 
+            <p className="text-lg mb-4 text-justify">I'm Ameen, a Computer Science undergrad wandering through the lore of life. My expertise spans from crafting applicable websites to witty programs, 
                                         my interests go beyond oblivion.
               <br />
               <br /> Feel free to browse through this website. I welcome your feedback and encourage collaboration on any exciting ideas you may have, whether you have 
@@ -69,7 +69,7 @@ const About = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1YpEifYicIryVSM0SB6bxZFDAjBcyMwkm/view"  // Replace with the actual path to your resume
+              href="https://drive.google.com/file/d/14f3cuS-7EYmM2alv8wtdlCA3QPT7uHSH/view"  // Replace with the actual path to your resume
               download="Resume.pdf"
               className="bg-black text-white text-bold border-2 border-blue-500 mt-6 px-6 py-3 rounded-lg hover:bg-blue-500 hover:text-black transition duration-300 inline-block"
             >

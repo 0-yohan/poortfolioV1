@@ -15,7 +15,7 @@ const projectsData = [
   {
     title: 'Sukhan',
     description: `A refined website to be of service to poets where they can upload their poetry and correspondingly can be read by
-                anybody. It not only allows poetss to effortlessly upload their poetry but also fosters a vibrant community where enthusiasts 
+                anybody. It not only allows poets to effortlessly upload their poetry but also fosters a vibrant community where enthusiasts 
                 can explore, appreciate, and engage with diverse poetic works.`,
     image: sukhan, // image
     link: 'http://sukhan.art/',
@@ -29,7 +29,7 @@ const projectsData = [
   },
   {
     title: 'foRms',
-    description: `forms is a web based form builder tool which is used to create a 
+    description: `foRms is a web based form builder tool which is used to create a 
                 survey and questionnaires online in order to collect the information and 
                 organise them either simple or complex.These google forms are used to plan 
                 events,manage event restrictions ,create a opinion poll,collect contact 
@@ -92,7 +92,7 @@ const Projects = () => {
               {/* Project Description */}
               <div className="md:w-2/3 md:mt-0">
                 <h2 className="text-2xl font-bold">{project.title}</h2>
-                <p className="mt-2">{project.description}</p>
+                <p className="mt-2 text-justify">{project.description}</p>
               </div>
             </div>
           </Link>
